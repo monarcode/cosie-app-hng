@@ -3,7 +3,6 @@
     "name": "cosie-app",
     "slug": "cosie-app",
     "version": "1.0.0",
-
     "scheme": "cosie-app",
     "web": {
       "bundler": "metro",
@@ -17,19 +16,16 @@
         {
           "launchModeExperimental": "most-recent"
         }
-      ]
+      ],
+      "expo-font"
     ],
     "experiments": {
       "typedRoutes": true,
-
       "tsconfigPaths": true
     },
-
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-
     "userInterfaceStyle": "light",
-
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
@@ -37,12 +33,22 @@
     },
     "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.monarcode.cosieapp"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
+      },
+      "package": "com.monarcode.cosieapp"
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "64217245-1cc8-48ec-99c0-4765acc915e2"
       }
     }
   }

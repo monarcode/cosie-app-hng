@@ -4,10 +4,32 @@ const colors = {
   limedSpruce: '#38434D',
   cornflowerBlue: '#6366F1',
   astral: '#2E78B7',
+  background: 'rgba(47, 47, 47, 1.0)',
+  light: '#e7eaf1',
+  brand: 'rgba(251, 97, 7,1.0)',
+  dark: 'rgba(252, 250, 248, 0.03)',
+  slideBg: 'rgba(26, 26, 26, 0.376)',
+} as const;
+
+const fontFamily = {
+  sliderTitle: 'Dirty-Line',
+  'Sora-Regular': 'Sora-Regular',
+} as const;
+
+const fontSizes = {
+  sm: 14,
+  md: 16,
+  lg: 18,
+  xl: 20,
+  '2xl': 24,
+  '3xl': 28,
+  '4xl': 32,
 } as const;
 
 export const lightTheme = {
   colors,
+  fontFamily,
+  fontSizes,
   components: {
     container: {
       alignItems: 'center',
@@ -51,11 +73,18 @@ export const lightTheme = {
       color: colors.limedSpruce,
       fontSize: 36,
     },
+    safeArea: {
+      flex: 1,
+      backgroundColor: colors.background,
+    },
   },
   margins: {
-    sm: 2,
-    md: 4,
-    lg: 8,
-    xl: 12,
+    sm: 4,
+    md: 8,
+    lg: 12,
+    xl: 16,
+    '2xl': 20,
+    '3xl': 24,
+    '4xl': 32,
   },
 } as const;
