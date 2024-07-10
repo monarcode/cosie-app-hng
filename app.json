@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "cosie-app",
+    "name": "Cosie",
     "slug": "cosie-app",
     "version": "1.0.0",
     "scheme": "cosie-app",
@@ -29,7 +29,7 @@
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#2f2f2f"
     },
     "assetBundlePatterns": ["**/*"],
     "ios": {
@@ -39,7 +39,7 @@
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "backgroundColor": "#2f2f2f"
       },
       "package": "com.monarcode.cosieapp"
     },
